@@ -8,6 +8,6 @@ def safe_print_integer_err(value):
         int_value = int(value)
         sys.stdout.write("{:d}\n".format(int_value))
         return True
-    except (ValueError, TypeError):
-        sys.stderr.write("Exception: Not an integer\n")
+    except ValueError as e:
+        sys.stderr.write("Exception: {}\n".format(e))
         return False
