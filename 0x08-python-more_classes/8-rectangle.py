@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """A class to represent a Rectangle
 Attributes:
-    __width (int): The width of the rectangle
-    __height (int): The height of the rectangle
+    number_of_instances (int): The number of Rectangle instances.
+    print_symbol (any): The symbol used for string representation.
 """
 
 
