@@ -1,21 +1,22 @@
 #!/usr/bin/python3
-"""A class to represent a Rectangle
-Attributes:
-    number_of_instances (int): The number of Rectangle instances.
-    print_symbol (any): The symbol used for string representation.
-"""
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
+    """A class to represent a Rectangle
+    Attributes:
+        number_of_instances (int): The number of Rectangle instances.
+        print_symbol (any): The symbol used for string representation.
+    """
     number_of_instances = 0
     print_symbol = '#'
 
-    """Initialize a new instance of the rectangle.
-    Args:
-        width (int): The of the rectangle (default is 0)
-        height (int): The height of the rectangle (default is 0)
-    """
     def __init__(self, width=0, height=0):
+        """Initialize a new instance of the rectangle.
+        Args:
+            width (int): The of the rectangle (default is 0)
+            height (int): The height of the rectangle (default is 0)
+        """
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
