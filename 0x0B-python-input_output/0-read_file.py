@@ -5,7 +5,7 @@
 def read_file(filename=""):
     """Read a file"""
     try:
-        with open(filename, 'r', encoding='UTF-8') as file:
+        with open(filename, 'r', encoding='UTF8') as file:
             read_content = file.read()
             print(read_content, end='')
     except:
