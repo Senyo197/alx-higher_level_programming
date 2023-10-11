@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 
 """A class representation of student"""
 
@@ -23,9 +22,4 @@ class Student:
         Returns:
             dictionary representation
         """
-        dic_rep = {
-            "first_name": self.first_name,
-            "last_name": self.last_name,
-            "age": self.age
-        }
-        return json.dumps(dic_rep)
+        return self.__dict__
