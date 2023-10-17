@@ -23,10 +23,16 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """Get the width of the rectangle"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """Set width of the rectangle
+        Raises:
+            TypeError: if the width value is not an int
+            ValueError: If width is less or equal to 0
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -36,10 +42,16 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """Get the height of the rectangle"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """Set width of the rectangle
+        Raises:
+            TypeError: if the height value is not an int
+            ValueError: If height is less or equal to 0
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -49,10 +61,16 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """Get the x co-ordinae of the rectangle"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """Set x co-ordinate of the rectangle
+        Raises:
+            TypeError: if the x value is not an int
+            ValueError: If x is less than 0
+        """
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
@@ -62,10 +80,17 @@ class Rectangle(Base):
 
     @property
     def y(self):
+        """Get the y co-ordinate of the rectangle"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """Set the y coordinate of the rectangle
+        Raises:
+            TypeError: if the y value is not an int
+            ValueError: If y is less than 0
+        """
+
         if not isinstance(value, int):
             raise TypeError("y is not an integer")
         if value < 0:
