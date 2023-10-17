@@ -65,4 +65,5 @@ class Square(Rectangle):
         return sqr_dict
 
     def __str__(self):
+        """Print the square representation"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
