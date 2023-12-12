@@ -2,7 +2,7 @@
 
 const args = process.argv.slice(2).map(Number);
 
-function secondBiggestNum(array) {
+function secondBiggestNum (array) {
   if (array.length < 2) {
     return 0;
   }
