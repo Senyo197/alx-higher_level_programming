@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const [firstArg]= process.argv.slice(2)
-const convertedNum = parseInt(firstArg)
+const [firstArg] = process.argv.slice(2);
+const convertedNum = parseInt(firstArg);
 
 function factorial (n) {
   if (n < 0) {
