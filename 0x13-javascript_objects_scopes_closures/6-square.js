@@ -7,8 +7,7 @@ class Square extends Rectangle {
     super(size, size);
   }
 
-  charPrint(c) {
-
+  charPrint (c) {
     const charToPrint = c || 'X';
 
     if (this.width !== undefined && this.height !== undefined) {

@@ -11,7 +11,7 @@ class Rectangle {
     }
   }
 
-  print() {
+  print () {
     if (this.width !== undefined && this.height !== undefined) {
       for (let i = 0; i < this.height; i++) {
         let row = '';
@@ -25,13 +25,13 @@ class Rectangle {
 
   rotate () {
     if (this.width !== undefined && this.height !== undefined) {
-      let temp = this.width;
+      const temp = this.width;
       this.width = this.height;
       this.height = temp;
     }
   }
 
-  double() {
+  double () {
     if (this.width !== undefined && this.height !== undefined) {
       this.width *= 2;
       this.height *= 2;
